@@ -170,17 +170,19 @@
             <li><a href="">Кредит</a></li>
           </ul>
         </div>
-        <div class="slider-services__slide col-right">
-          <b>Доставка</b>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="slider-services__slide col-right">
-          <b>Гарантия</b>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div class="slider-services__slide col-right">
-          <b>Кредит</b>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
+        <div class="col-right">
+          <div class="slider-services__slide">
+            <b>Доставка</b>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="slider-services__slide">
+            <b>Гарантия</b>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="slider-services__slide">
+            <b>Кредит</b>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
+          </div>
         </div>
       </div>
       <section class="company">
@@ -244,12 +246,12 @@
       <button type="button" name="button" class="btn btn--close"></button>
       <form action="/echo" method="post" class="modal-form">
         <div class="field-wrapper">
-          <label for="contact-name">Ваше имя</label>
-          <input type="text" name='name' id="contact-name" required>
+          <label class="modal-form__label" for="contact-name">Ваше имя</label>
+          <input class="modal-form__field" type="text" name='name' id="contact-name" required>
         </div>
         <div class="field-wrapper">
-          <label class="field__label" for="contact-email">Ваш e-mail</label>
-          <input type="email" name='email' id="contact-email" required>
+          <label class="modal-form__label" for="contact-email">Ваш e-mail</label>
+          <input class="modal-form__field" type="email" name='email' id="contact-email" required>
         </div>
         <div class="field-wrapper">
           <label for="input-text">Текст письма</label>
