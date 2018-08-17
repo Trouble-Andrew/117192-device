@@ -60,7 +60,57 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет фильтр товаров -->
+        <form action="https://echo.htmlacademy.ru" method="get" class="filter">
+          <fieldset class="filter">
+            <legend>Стоимость</legend>
+            <div class="range-controls">
+              <div class="scale"></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+              <p>от 0</p>
+              <p>до 5000</p>
+            </div>
+          </fieldset>
+          <fieldset class="filter">
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter__option">
+                <input type="checkbox" name="black" class="visually-hidden filter__input filter__checkbox" id="filter__black" checked>
+                <label for="filter__black">Черный</label>
+              </li>
+              <li class="filter__option">
+                <input type="checkbox" name="white" class="visually-hidden filter__input filter__checkbox" id="filter__white">
+                <label for="filter__white">Белый</label>
+              </li>
+              <li class="filter__option">
+                <input type="checkbox" name="blue" class="visually-hidden filter__input filter__checkbox" id="filter__blue" checked>
+                <label for="filter__blue">Синий</label>
+              </li>
+              <li class="filter__option">
+                <input type="checkbox" name="red" class="visually-hidden filter__input filter__checkbox" id="filter__red" checked>
+                <label for="filter__red">Красный</label>
+              </li>
+              <li class="filter__option">
+                <input type="checkbox" name="pink" class="visually-hidden filter__input filter__checkbox" id="filter__pink">
+                <label for="filter__pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter">
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter__option">
+                <input type="radio" name="bluetooth" value="bluetooth-yes" class="visually-hidden filter__input filter__radio" id="filter__yes">
+                <label for="filter__yes">Есть</label>
+              </li>
+              <li class="filter__option">
+                <input type="radio" name="bluetooth" value="bluetooth-no" class="visually-hidden filter__input filter__radio" id="filter__no">
+                <label for="filter__no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="btn">Показать</button>
+        </form>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
