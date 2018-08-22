@@ -54,8 +54,8 @@
     <main>
       <h1 class="visually-hidden">Интернет магазин Device</h1>
       <h2 class="visually-hidden">Популярные товары</h2>
-      <div class=" slider-wrapper">
-        <ol class="slider slider__slides">
+      <div class="slider slider-wrapper">
+        <ol class="slider__slides">
           <li class="slider__slide">
             <img src="img/slider-1.png" alt="Селфи палка" class="slider__img" width="384" height="486">
             <div class="slider__desc">
@@ -111,14 +111,11 @@
             </div>
           </li>
         </ol>
-        <div class="slider__controls">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <label for="btn-1"></label>
-          <input type="radio" id="btn-2" name="toggle">
-          <label for="btn-2"></label>
-          <input type="radio" id="btn-3" name="toggle">
-          <label for="btn-3"></label>
-        </div>
+        <ul class="slider__switches">
+          <li class="slider__radio"><button type="button">Первый слайд</button></li>
+          <li class="slider__radio"><button type="button">Второй слайд</button></li>
+          <li class="slider__radio"><button type="button">Третий слайд</button></li>
+        </ul>
       </div>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
