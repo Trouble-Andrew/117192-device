@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  color: #000000;
+  background-color: #f7e296;
+}
+
+.main-nav__user {
+  font-size: 15px;
+  line-height: 30px;
+  list-style: none;
+}
+
+.main-nav__site {
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-nav__site ul {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: normal;
+  text-transform: none;
+  list-style: none;
+}
+
+.main-nav__site a, .main-nav__user a {
+  color: #000000;
+}
+
+.main-nav__site a:hover, .main-nav__site a:focus, .main-nav__user a:hover, .main-nav__user a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__site a:active, .main-nav__user a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__logo:hover {
+  background-color: : rgba(0, 0, 0, 0.6);
+}
+
+.slider ol {
+  margin: 0;
+  padding: 0;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__desc b {
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.btn {
+  position: relative;
+  width: 220px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px; */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  box-sizing: content-box;
+  background: none;
+  border: 0;
+  color: inherit;
+  line-height: normal;
+  overflow: visible;
+}
+
+.btn::before {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 20px;
+  content: "";
+  width: 220px;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.btn:hover {
+  background-color: #f0c52e;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slider__table td {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.slider__table th {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 160px;
+  height: 275px;
+  color: #000000;
+}
+
+.categories__item a:hover .img-wrapper {
+  color: #000000;
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.categories__item a:hover img {
+  opacity: 0.5;
+}
+
+.categories__item .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 197, 46, 0.5);
+  width: 160px;
+  height: 160px;
+}
+
+.categories__item p {
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 35px;
+  background-color: #ffffff;
+}
+
+.slider-services__controls {
+  background-color: #e5e5e5;
+}
+
+.slider-services__controls ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-services__btn {
+  color: #000000;
+}
+
+.slider-services__btn {
+  color: #000000;
+}
+
+.slider-services__slide {
+  background-color: #e5e5e5;
+}
+
+.slider-services__slide:nth-child(1) {
+  background-image: url(../img/delivery.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-services__slide:nth-child(2) {
+  background-image: url(../img/warranty.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-services__slide:nth-child(3) {
+  background-image: url(../img/credit.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-services__slide b {
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.company ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.company a {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.company a:hover {
+  filter: none;
+  opacity: 1;
+}
