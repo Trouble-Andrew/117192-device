@@ -211,7 +211,7 @@
         <a href="" class="btn about-us__btn">Напишите нам</a>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__col-1">
         <a href="" class="footer__logo"><img src="img/device-logo.svg" alt="Логотип Девайс" class="page-header__logo" width="165" height="35"></a>
         <a href="" class="footer__map">г. Москва, ул. Строителей, 15</a>
@@ -246,15 +246,15 @@
       <form action="https://echo.htmlacademy.ru" method="get" class="modal-form">
         <div class="field-wrapper">
           <label class="modal-form__label" for="contact-name">Ваше имя</label>
-          <input class="modal-form__field" type="text" name='name' id="contact-name" required>
+          <input class="modal-form__field" type="text" name='name' id="contact-name" placeholder="Имя Фамилия" required>
         </div>
         <div class="field-wrapper">
           <label class="modal-form__label" for="contact-email">Ваш e-mail</label>
-          <input class="modal-form__field" type="email" name='email' id="contact-email" required>
+          <input class="modal-form__field" type="email" name='email' id="contact-email" placeholder="email@example.com" required>
         </div>
         <div class="field-wrapper">
-          <label for="input-text">Текст письма</label>
-          <textarea name="text" rows="6" id="input-text" required></textarea>
+          <label class="modal-form__label" for="input-text">Текст письма</label>
+          <textarea class="modal-form__field" name="text" rows="6" id="input-text" placeholder="В свободной форме" required></textarea>
         </div>
         <button type="submit" class="btn modal__btn">Напишите нам</button>
       </form>
