@@ -283,6 +283,8 @@ button.btn {
 }
 
 .slider-services__controls {
+  position: relative;
+  z-index: 1;
   background-color: #e5e5e5;
 }
 
@@ -293,7 +295,9 @@ button.btn {
 }
 
 .slider-services__btn {
+  position: relative;
   color: #000000;
+  align-items: flex-start;
 }
 
 .slider-services__btn:hover, .slider-services__btn:focus {
@@ -304,6 +308,8 @@ button.btn {
 .slider-services__btn:active {
   color: rgba(240, 197, 46, 1);
   background-color: #000000;
+  width: 500px;
+  align-items: flex-start;
 }
 
 .slider-services__slide {
