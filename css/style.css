@@ -108,12 +108,23 @@ a {
 }
 
 .main-nav__search button {
-  border: 0;
-  width: 16px;
-  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000;
+  width: 85px;
+  height: 49px;
   background-color: #f7e296;
-  background-image: url(../img/search.svg);
   cursor: pointer;
+}
+
+.main-nav__search button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main-nav__search button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-nav__input {
