@@ -99,11 +99,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header__logo:hover, .page-header__logo:focus {
+.page-header__logo:hover, .page-header__logo:focus, .footer__logo:hover, .footer__logo:focus {
   opacity: 0.6;
 }
 
-.page-header__logo:active {
+.page-header__logo:active, .footer__logo:active {
   opacity: 0.3;
 }
 
