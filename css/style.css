@@ -99,8 +99,12 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header__logo:hover {
-  background-color: : rgba(0, 0, 0, 0.6);
+.page-header__logo:hover, .page-header__logo:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
 
 .main-nav__search button {
@@ -406,11 +410,11 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.logo__html-academy a:hover, .logo__html-academy a:focus {
+.logo__html-academy:hover, .logo__html-academy:focus {
   opacity: 0.6;
 }
 
-.logo__html-academy a:active {
+.logo__html-academy:active {
   opacity: 0.3;
 }
 
