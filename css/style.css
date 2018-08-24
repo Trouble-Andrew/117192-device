@@ -348,7 +348,8 @@ button.btn {
 }
 
 .company a {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%);
+  opacity: 0.2; */
   opacity: 0.2;
 }
 
@@ -521,6 +522,10 @@ button.btn {
 .modal-form__field {
   background-color: #f2f2f2;
   border: 0;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0);
+  outline: 0;
   height: 50px;
   padding-left: 20px;
   font-family: "Open Sans Light", Arial, sans-serif;
@@ -528,11 +533,11 @@ button.btn {
   line-height: 8px;
 }
 
-.modal__write-us input:hover {
+.modal-form__field:hover {
   background-color: ##eaeaea;
 }
 
-.modal-form input:focus {
+.modal-form__field:focus {
   border-color: #f8e296;
 }
 
@@ -745,3 +750,35 @@ a.sorting-by-type__item--active {
 .pagination__prev a:active, .pagination__next a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* SVG-Filter */
+
+img.grayscale:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+.company li:nth-child(1) .svg-filter {
+  background: url(../img/logo-1.jpg);
+}
+
+.company li:nth-child(2) .svg-filter {
+  background: url(../img/logo-2.jpg);
+}
+
+.company li:nth-child(3) .svg-filter {
+  background: url(../img/logo-3.jpg);
+}
+
+.company li:nth-child(4) .svg-filter {
+  background: url(../img/logo-4.jpg);
+}
+
+.svg-filter:hover {
+  opacity: 1;
+}
+
+.svg-filter image:hover {
+  opacity: 0;
+}
+
+/*_______________________________________*/
