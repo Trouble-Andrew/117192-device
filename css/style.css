@@ -48,6 +48,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-nav {
   color: #000000;
   background-color: #f7e296;
@@ -59,7 +67,7 @@ a {
   list-style: none;
 }
 
-.main-nav__site {
+.main-nav__site, .footer__site a {
   font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -93,6 +101,35 @@ a {
 
 .page-header__logo:hover {
   background-color: : rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__search button {
+  border: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #f7e296;
+  background-image: url(../img/search.svg);
+  cursor: pointer;
+}
+
+.main-nav__input {
+  background-color: #f7e296;
+  border: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.user-profile--disable {
+  display: none;
+}
+
+.login--disable {
+  display: none;
+}
+
+.logout--disable {
+  display: none;
 }
 
 .slider ol {
@@ -314,6 +351,10 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.logout a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer .social-btn {
   text-indent: 100%;
   white-space: nowrap;
@@ -347,6 +388,30 @@ a {
 
 .social-btn--twitter {
   background-image: url(../img/twitter.svg);
+}
+
+.footer__site a:hover, .footer__site a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__site a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__user a:hover, .footer__user a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer__user a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.logo__html-academy a:hover, .logo__html-academy a:focus {
+  opacity: 0.6;
+}
+
+.logo__html-academy a:active {
+  opacity: 0.3;
 }
 
 .modal__write-us {
@@ -490,10 +555,48 @@ a {
   margin: 0;
 }
 
-.filters ul, .sorting ul {
+.filters ul, .sorting ul, .catalog ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.filter-form__scale {
+  box-sizing: border-box;
+  width: 196px;
+  height: 4px;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+.filter-form__range {
+  position: relative;
+  width: 51%;
+  height: inherit;
+  background-color: #91c92f;
+}
+
+.filter-form__toggle {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f7f4;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-form__toggle:hover {
+  width: 22px;
+  height: 22px;
+}
+
+.filter-form__toggle--min {
+  left: 0;
+}
+
+.filter-form__toggle--max {
+  right: 0;
 }
 
 .sorting__by-type a {
@@ -505,4 +608,86 @@ a {
 
 a.sorting__by-type--active {
   color: #000000;
+}
+
+.product-card__desc {
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.product-card__price {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.product-card__compare {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.product-card__compare:hover, .product-card__compare:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.product-card__compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  background-color: #ebebeb;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.pagination a {
+  color: #000000;
+}
+
+.pagination__item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__item a:hover, .pagination__item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination__item a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__prev a {
+  width: 125px;
+  height: 70px;
+  color: #000000;
+}
+
+.pagination__next a {
+  width: 137px;
+  height: 70px;
+  color: #000000;
+}
+
+.pagination__prev a, .pagination__next a {
+  display: block;
+  padding: 25px 40px;
+}
+
+.pagination__item--active a {
+  color: #000000;
+}
+
+.pagination__prev a:hover, .pagination__prev a:focus, .pagination__next a:hover, .pagination__next a:focus {
+  background-color: #d8d8d8;
+}
+
+.pagination__prev a:active, .pagination__next a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
