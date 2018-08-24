@@ -630,14 +630,22 @@ button.btn {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.sorting__by-type a {
+.sorting-by-type__item {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-a.sorting__by-type--active {
+.sorting-by-type__item:hover, .sorting-by-type__item:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-by-type__item:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+a.sorting-by-type__item--active {
   color: #000000;
 }
 
