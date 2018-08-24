@@ -194,6 +194,14 @@ a {
   cursor: pointer;
 }
 
+a.btn {
+  color: #000000;
+}
+
+button.btn {
+  color: #000000;
+}
+
 .btn::before {
   position: absolute;
   z-index: -1;
@@ -223,6 +231,10 @@ a {
 .slider__table th {
   font-size: 13px;
   line-height: 20px;
+}
+
+.slider__btn {
+  color: #000000;
 }
 
 .categories ul {
