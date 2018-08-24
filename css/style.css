@@ -296,7 +296,12 @@ button.btn {
   color: #000000;
 }
 
-.slider-services__btn:hover {
+.slider-services__btn:hover, .slider-services__btn:focus {
+  color: #000000;
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.slider-services__btn:active {
   color: rgba(240, 197, 46, 1);
   background-color: #000000;
 }
