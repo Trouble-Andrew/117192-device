@@ -626,6 +626,10 @@ button.btn {
   right: 0;
 }
 
+.filter-form__range-controls p {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .sorting__by-type a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
