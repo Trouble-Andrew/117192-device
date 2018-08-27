@@ -251,8 +251,9 @@ button.btn {
 }
 
 .slider__table td {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
+  font-weight: lighter;
   line-height: 48px;
   color: #000000;
 }
