@@ -1,20 +1,13 @@
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
   src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+  font-family: "Open Sans";
+  src: url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
   font-weight: lighter;
   font-style: normal;
 }
@@ -23,6 +16,13 @@
   font-family: "Gilroy";
   src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
   font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -122,6 +122,10 @@ a {
   border-width: 3px;
   border-color: rgba(255, 255, 255, 0);
   outline: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
 }
 
 .main-nav__search input:hover {
@@ -142,6 +146,10 @@ a {
   height: 49px;
   background-color: #f7e296;
   cursor: pointer;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
 }
 
 .main-nav__search button:hover {
@@ -159,6 +167,7 @@ a {
   border: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
+  font-weight: lighter;
   line-height: 30px;
 }
 
@@ -253,7 +262,7 @@ button.btn {
 .slider__table td {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 48px;
   color: #000000;
 }
@@ -713,7 +722,7 @@ a.sorting-by-type__item--active {
 }
 
 .product-card__price {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
