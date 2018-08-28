@@ -43,6 +43,7 @@ body {
   line-height: 30px;
   color: #464646;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {
@@ -822,16 +823,12 @@ button.btn {
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
-.catalog .container {
+.catalog-page .container {
   padding-left: 80px;
 }
 
-/* main.catalog {
-  display: flex;
-} */
-
 .catalog__main-content {
-  background: linear-gradient(to right, #eeeeee 50%, #fff 50%);
+  background: linear-gradient(to right, #eeeeee 30%, #fff 30%);
 }
 
 .catalog__main-content .container {
@@ -840,8 +837,13 @@ button.btn {
 }
 
 .catalog__col-left {
-  min-height: 100%;
+  min-height: 328px;
   background-color: #eeeeee;
+}
+
+.catalog__col-right {
+  width: 832px;
+  padding-left: 72px;
 }
 
 .catalog__title {
@@ -851,9 +853,10 @@ button.btn {
   line-height: 48px;
 }
 
-.breadcrumbs {
+.catalog-page .breadcrumbs {
   list-style: none;
   margin: 0;
+  margin-bottom: 48px;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -876,8 +879,7 @@ button.btn {
 
 .filters {
   background-color: #eeeeee;
-  /* width: 270px;
-  min-height: 100%; */
+  width: 270px;
 }
 
 .filters h2, .sorting h2 {
@@ -887,6 +889,13 @@ button.btn {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.filters h2 {
+  background-color: #dcdcdc;
+  min-height: 70px;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .filters fieldset {
@@ -956,6 +965,17 @@ button.btn {
 
 .sorting {
   background-color: #eeeeee;
+  width: 2000px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  margin-bottom: 71px;
+}
+
+.sorting-by-type {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .sorting-by-type__item {
@@ -975,6 +995,20 @@ button.btn {
 
 a.sorting-by-type__item--active {
   color: #000000;
+}
+
+.catalog ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalog li {
+  margin-right: 40px;
+}
+
+.catalog li:nth-child(2n) {
+  margin-right: 0px;
 }
 
 .product-card__desc {
@@ -1013,6 +1047,22 @@ a.sorting-by-type__item--active {
   font-weight: 800;
   line-height: 24px;
   color: #000000;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.pagination li:first-child {
+  margin-right: auto;
+}
+
+.pagination li:last-child {
+  margin-left: auto;
 }
 
 .pagination a {
