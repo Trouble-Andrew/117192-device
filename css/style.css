@@ -68,6 +68,17 @@ img {
   margin: -1px;
 }
 
+.page-header {
+  position: relative;
+  margin-top: 40px;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -18px;
+  left: 60px;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -88,9 +99,14 @@ img {
   width: 500px;
 }
 
+.main-nav__col-left {
+  margin-top: -15px;
+}
+
 .main-nav__user {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -109,6 +125,7 @@ img {
 
 .main-nav__site {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 45px;
@@ -184,7 +201,6 @@ img {
 }
 
 .main-nav__search input:hover {
-  background-color: ##eaeaea;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -238,6 +254,19 @@ img {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+}
+
 .slider ol {
   margin: 0;
   padding: 0;
@@ -262,7 +291,7 @@ img {
 .slider__slide {
   position: absolute;
   z-index: -10;
-  top: -100;
+  top: -30px;
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -270,7 +299,7 @@ img {
 
 .slider__slide--active {
   z-index: 10;
-  top: -100px;
+  /* top: -100; */
   opacity: 1;
 }
 
@@ -406,6 +435,10 @@ button.btn {
   color: #000000;
 }
 
+.categories {
+  margin-bottom: 147px;
+}
+
 .categories ul {
   list-style: none;
   margin: 0;
@@ -455,13 +488,20 @@ button.btn {
 }
 
 .slider-services {
+  position: relative;
   background-color: #e5e5e5;
-  margin-top: 147px;
+  min-height: 288px;
+  margin-bottom: 95px;
+}
+
+.slider-services .container {
+  display: flex;
 }
 
 .slider-services__controls {
   position: relative;
   z-index: 1;
+  width: 280px;
   background-color: #e5e5e5;
 }
 
@@ -491,6 +531,17 @@ button.btn {
 
 .slider-services__slide {
   background-color: #e5e5e5;
+  position: absolute;
+  min-height: 288px;
+  width: 835px;
+  padding-left: 120px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.slider-services__slide--active {
+  z-index: 1;
+  opacity: 1;
 }
 
 .slider-services__slide:nth-child(1) {
@@ -518,7 +569,19 @@ button.btn {
   color: #000000;
 }
 
+.slider-services__slide p {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+}
+
+.company {
+  margin-bottom: 95px;
+}
+
 .company ul {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -535,7 +598,14 @@ button.btn {
   opacity: 1;
 }
 
-.about-us {}
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 560px;
+}
 
 .about-us h2 {
   font-family: "Gilroy", "Arial Black", sans-serif;
@@ -562,11 +632,34 @@ button.btn {
   background-color: #464646;
 }
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 20px;
+}
+
+.footer__col-1, .footer__col-2, .footer__col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__col-3 {
+  align-items: flex-end;
+}
+
 .footer a {
   color: #ffffff;
 }
 
-.footer__logo {}
+.footer__logo path {
+  fill: #ffc600;
+}
+
+.footer__site, .footer__social, .footer__user {
+  display: flex;
+  justify-content: center;
+}
 
 .footer__map:hover {}
 
@@ -715,7 +808,7 @@ button.btn {
 }
 
 .modal-form__field:hover {
-  background-color: ##eaeaea;
+  background-color: #eaeaea;
 }
 
 .modal-form__field:focus {
@@ -727,6 +820,28 @@ button.btn {
   width: 960px;
   height: 559px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.catalog .container {
+  padding-left: 80px;
+}
+
+/* main.catalog {
+  display: flex;
+} */
+
+.catalog__main-content {
+  background: linear-gradient(to right, #eeeeee 50%, #fff 50%);
+}
+
+.catalog__main-content .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog__col-left {
+  min-height: 100%;
+  background-color: #eeeeee;
 }
 
 .catalog__title {
@@ -744,6 +859,7 @@ button.btn {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  display: flex;
 }
 
 .breadcrumbs a {
@@ -756,6 +872,12 @@ button.btn {
 
 .breadcrumbs a:active {
   color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: #eeeeee;
+  /* width: 270px;
+  min-height: 100%; */
 }
 
 .filters h2, .sorting h2 {
@@ -830,6 +952,10 @@ button.btn {
 
 .filter-form__range-controls p {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.sorting {
+  background-color: #eeeeee;
 }
 
 .sorting-by-type__item {
