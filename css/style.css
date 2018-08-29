@@ -646,21 +646,58 @@ button.btn {
 }
 
 .about-us h2 {
+  position: relative;
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000;
 }
 
+.about-us h2::before {
+  position: absolute;
+  content: "";
+  top: -45px;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+}
+
+.about-us p {
+  margin-bottom: 45px;
+}
+
+.about-us ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 60px;
+}
+
 .about-us li {
+  position: relative;
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
   color: #000;
+  margin-left: 35px;
 }
 
-.about-us .map {}
+.about-us li::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -35px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.about-us .map {
+  margin-bottom: 70px;
+}
 
 .map {
   width: 560px;
