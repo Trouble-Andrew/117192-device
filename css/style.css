@@ -733,20 +733,27 @@ button.btn {
 }
 
 .modal__write-us {
+  position: relative;
+  display: flex;
   width: 960px;
   height: 553px;
+  padding: 95px 100px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, .2);
+  flex-direction: column;
 }
 
-.btn--close {
+button.btn--close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
   font-size: 0;
   line-height: normal;
   line-height: 0;
-  position: relative;
+  /* position: relative; */
   display: flex;
   overflow: visible;
-  flex-direction: column;
-  box-sizing: content-box;
+  /* flex-direction: column;
+  box-sizing: content-box; */
   width: 55px;
   height: 55px;
   padding: 0 0;
@@ -785,12 +792,40 @@ button.btn {
   opacity: 0;
 }
 
+.modal__write-us form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-wrapper:nth-child(1), .field-wrapper:nth-child(2) {
+  width: 360px;
+  margin-bottom: 39px;
+}
+
+.field-wrapper:nth-child(3) {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.field-wrapper:nth-child(3) textarea {
+  padding-top: 18px;
+  height: 156px;
+}
+
 .modal-form__label {
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
   color: #000;
+  margin-bottom: 13px;
 }
 
 .modal-form__field {
@@ -812,6 +847,7 @@ button.btn {
 }
 
 .modal-form__field:focus {
+  background-color: #fff;
   border-color: #f8e296;
 }
 
