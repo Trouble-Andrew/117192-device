@@ -609,6 +609,7 @@ button.btn {
 
 .about-us {
   width: 560px;
+  margin-bottom: 85px;
 }
 
 .about-us h2 {
@@ -736,7 +737,7 @@ button.btn {
   position: relative;
   display: flex;
   width: 960px;
-  height: 553px;
+  min-height: 553px;
   padding: 95px 100px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, .2);
   flex-direction: column;
@@ -799,22 +800,22 @@ button.btn--close {
   flex-wrap: wrap;
 }
 
-.field-wrapper {
+.modal__write-us .field-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.field-wrapper:nth-child(1), .field-wrapper:nth-child(2) {
+.modal__write-us .field-wrapper:nth-child(1), .field-wrapper:nth-child(2) {
   width: 360px;
   margin-bottom: 39px;
 }
 
-.field-wrapper:nth-child(3) {
+.modal__write-us .field-wrapper:nth-child(3) {
   width: 100%;
   margin-bottom: 55px;
 }
 
-.field-wrapper:nth-child(3) textarea {
+.modal__write-us textarea {
   padding-top: 18px;
   height: 156px;
 }
