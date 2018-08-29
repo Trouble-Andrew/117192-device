@@ -103,7 +103,7 @@ img {
 }
 
 .main-nav__col-left {
-  margin-top: -15px;
+  margin-top: -10px;
 }
 
 .main-nav__user {
@@ -111,6 +111,7 @@ img {
   line-height: 30px;
   display: flex;
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
   justify-content: space-between;
@@ -129,7 +130,6 @@ img {
 .main-nav__site {
   display: flex;
   margin: 0;
-  margin-top: 45px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -187,6 +187,10 @@ img {
 
 .page-header__logo:active, .footer__logo:active {
   opacity: .3;
+}
+
+.main-nav__search {
+  margin-bottom: 36px;
 }
 
 .main-nav__search input {
@@ -263,7 +267,19 @@ img {
 
 .sub-menu {
   position: absolute;
+  z-index: 20;
+  left: -60px;
   display: none;
+  background-color: #f7e296;
+  width: 1160px;
+  height: 161px;
+  padding-left: 60px;
+}
+
+.sub-menu ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .dropdown:hover .sub-menu {
@@ -517,17 +533,34 @@ button.btn {
 
 .slider-services__btn {
   position: relative;
+  z-index: 5;
   color: #000;
   align-items: flex-start;
 }
+
+/* .slider-services__btn::before {
+  position: absolute;
+  z-index: -1;
+  top: 19px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  content: '';
+  background-color: #f0c52e;
+} */
 
 .slider-services__btn:hover, .slider-services__btn:focus {
   color: #000;
   background-color: rgba(240, 197, 46, 1);
 }
 
+.slider-services__btn:active::before {
+  background-color: #000;
+}
+
 .slider-services__btn:active {
   width: 500px;
+  z-index: 10;
   color: rgba(240, 197, 46, 1);
   background-color: #000;
   align-items: flex-start;
@@ -626,6 +659,8 @@ button.btn {
   line-height: 40px;
   color: #000;
 }
+
+.about-us .map {}
 
 .map {
   width: 560px;
