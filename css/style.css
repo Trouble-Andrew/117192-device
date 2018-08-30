@@ -83,7 +83,7 @@ img {
 
 .main-nav {
   display: flex;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-right: 60px;
   padding-left: 60px;
   color: #000;
@@ -106,7 +106,7 @@ img {
   line-height: 30px;
   display: flex;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
   justify-content: space-between;
@@ -117,7 +117,12 @@ img {
   margin-left: 35px;
 }
 
-.main-nav__user li:nth-child(2) {
+.main-nav__user .login {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.main-nav__user .logout {
   margin-right: auto;
   margin-left: 0;
 }
@@ -144,7 +149,7 @@ img {
   font-weight: 800;
   line-height: 24px;
   list-style: none;
-  letter-spacing: 2px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
 }
 
@@ -293,13 +298,13 @@ img {
 
 .slider-wrapper {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .slider__slides {
   position: relative;
   z-index: 1;
-  min-height: 486px;
+  min-height: 480px;
 }
 
 .slider__slide {
@@ -370,7 +375,6 @@ img {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  line-height: normal;
   position: relative;
   z-index: 5;
   display: flex;
@@ -381,7 +385,7 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 2.15px;
   text-transform: uppercase;
   color: #000;
   color: inherit;
@@ -401,7 +405,7 @@ button.btn {
 .btn::before {
   position: absolute;
   z-index: -1;
-  top: 19px;
+  top: 20px;
   left: 0;
   width: 220px;
   height: 8px;
@@ -498,7 +502,7 @@ button.btn {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  padding-top: 35px;
+  padding-top: 15px;
   background-color: #fff;
 }
 
@@ -627,20 +631,23 @@ button.btn {
 
 .about-us {
   width: 560px;
-  margin-bottom: 85px;
+  margin-bottom: 75px;
 }
 
 .about-us h2 {
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 47px;
+  font-weight: 800;
   line-height: 48px;
+  letter-spacing: 0.21px;
   position: relative;
   color: #000;
+  margin-bottom: 45px;
 }
 
 .about-us h2::before {
   position: absolute;
-  top: -45px;
+  top: -50px;
   width: 80px;
   height: 7px;
   content: '';
@@ -648,12 +655,16 @@ button.btn {
 }
 
 .about-us p {
-  margin-bottom: 45px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 35px;
 }
 
 .about-us ul {
   margin: 0;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 50px;
   padding: 0;
   list-style: none;
 }
@@ -681,7 +692,7 @@ button.btn {
 }
 
 .about-us .map {
-  margin-bottom: 70px;
+  margin-bottom: 71px;
 }
 
 .map {
@@ -728,7 +739,42 @@ button.btn {
 }
 
 .logout a {
-  color: rgba(255, 255, 255, .3);
+  color: rgba(0, 0, 0, .3);
+}
+
+.footer__site {
+  padding: 0;
+}
+
+.footer__site a {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+}
+
+.footer__site li {
+  margin-right: 35px;
+}
+
+.footer__site li:last-child {
+  margin-right: 0px;
+}
+
+.footer__social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.footer__social li {
+  margin-right: 23px;
+}
+
+.footer__social li:last-child {
+  margin-right: 0px;
 }
 
 .footer .social-btn {
@@ -742,11 +788,7 @@ button.btn {
   border-radius: 50%;
 }
 
-.footer .social-btn:hover {
-  opacity: .6;
-}
-
-.footer .social-btn:focus {
+.footer .social-btn:hover, .footer .social-btn:focus {
   opacity: .6;
 }
 
@@ -770,6 +812,14 @@ button.btn {
   color: rgba(255, 255, 255, .6);
 }
 
+.footer__user li {
+  padding-left: 30px;
+}
+
+.footer__user {
+  list-style: none;
+}
+
 .footer__site a:active {
   color: rgba(255, 255, 255, .3);
 }
@@ -782,12 +832,22 @@ button.btn {
   color: rgba(255, 255, 255, .3);
 }
 
+.logo__html-academy {
+  display: block;
+  margin-top: 65px;
+}
+
 .logo__html-academy:hover, .logo__html-academy:focus {
   opacity: .6;
 }
 
 .logo__html-academy:active {
   opacity: .3;
+}
+
+.telephone {
+  display: block;
+  margin-top: 20px;
 }
 
 .modal__write-us {
