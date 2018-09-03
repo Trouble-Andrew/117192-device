@@ -66,6 +66,13 @@
             <li class="slider__slide slider__slide--active">
               <div class="slider__img-wrapper">
                 <img src="img/slider-1.png" alt="Селфи палка" class="slider__img" width="384" height="486">
+
+
+
+
+
+
+
               </div>
               <div class="slider__desc">
                 <b>Делай селфи, как Бен Стиллер!</b>
@@ -88,6 +95,13 @@
             <li class="slider__slide">
               <div class="slider__img-wrapper">
                 <img src="img/slider-2.png" alt="Фитнес браслет" class="slider__img" width="345" height="485">
+
+
+
+
+
+
+
               </div>
               <div class="slider__desc">
                 <b>Худеем правильно!</b>
@@ -106,6 +120,13 @@
             <li class="slider__slide">
               <div class="slider__img-wrapper">
                 <img src="img/slider-3.png" alt="Квадрокоптер" class="slider__img" width="526" height="334">
+
+
+
+
+
+
+
               </div>
               <div class="slider__desc">
                 <b>Порхает как бабочка, жалит как пчела!</b>
@@ -183,11 +204,11 @@
             </ul>
           </div>
           <div class="col-right">
-            <div class="slider-services__slide">
+            <div class="slider-services__slide slider-services__slide--active">
               <b>Доставка</b>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="slider-services__slide slider-services__slide--active">
+            <div class="slider-services__slide">
               <b>Гарантия</b>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
             </div>
@@ -256,7 +277,7 @@
             </ul>
             <a href="" class="btn about-us__btn">Подробнее о нас</a>
           </section>
-          <section class="about-us">
+          <section class="about-us contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <a href="">
@@ -305,23 +326,39 @@
       </div>
     </footer>
     <section class="modal modal__write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <button type="button" name="button" class="btn btn--close"></button>
-      <form action="https://echo.htmlacademy.ru" method="get" class="modal-form">
-        <div class="field-wrapper">
-          <label class="modal-form__label" for="contact-name">Ваше имя</label>
-          <input class="modal-form__field" type="text" name="name" id="contact-name" placeholder="Имя Фамилия" required>
-        </div>
-        <div class="field-wrapper">
-          <label class="modal-form__label" for="contact-email">Ваш e-mail</label>
-          <input class="modal-form__field" type="email" name="email" id="contact-email" placeholder="email@example.com" required>
-        </div>
-        <div class="field-wrapper">
-          <label class="modal-form__label" for="input-text">Текст письма</label>
-          <textarea class="modal-form__field" name="text" rows="12" id="input-text" placeholder="В свободной форме" required></textarea>
-        </div>
-        <button type="submit" class="btn modal__btn">Напишите нам</button>
-      </form>
+      <div class="modal__container">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <button type="button" name="button" class="btn btn--close"></button>
+        <form action="https://echo.htmlacademy.ru" method="get" class="modal-form">
+          <div class="field-wrapper">
+            <label class="modal-form__label" for="contact-name">Ваше имя</label>
+            <input class="modal-form__field" type="text" name="name" id="contact-name" placeholder="Имя Фамилия" required>
+
+
+
+
+
+
+
+          </div>
+          <div class="field-wrapper">
+            <label class="modal-form__label" for="contact-email">Ваш e-mail</label>
+            <input class="modal-form__field" type="email" name="email" id="contact-email" placeholder="email@example.com" required>
+
+
+
+
+
+
+
+          </div>
+          <div class="field-wrapper">
+            <label class="modal-form__label" for="input-text">Текст письма</label>
+            <textarea class="modal-form__field" name="text" rows="12" id="input-text" placeholder="В свободной форме" required></textarea>
+          </div>
+          <button type="submit" class="btn modal__btn">Напишите нам</button>
+        </form>
+      </div>
     </section>
     <section class="modal modal__map"></section>
   </div>
