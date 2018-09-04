@@ -893,7 +893,7 @@ button.btn {
   justify-content: space-between;
 }
 
-.footer__col-1, .footer__col-2, .footer__col-3 {
+/* .footer__col-1, .footer__col-2, .footer__col-3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -916,20 +916,20 @@ button.btn {
 }
 
 .footer__col-2 {
+  width: 20%;
   padding-bottom: 10px;
 }
 
 .footer__col-3 {
   align-items: flex-end;
   flex-wrap: nowrap;
-}
-
+} */
 .footer a {
   color: #fff;
 }
 
 .footer__logo {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
 }
 
 .footer__logo path {
@@ -965,8 +965,14 @@ button.btn {
   color: rgba(255, 255, 255, .7);
 }
 
+.footer .logout {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 .logout a {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(255, 255, 255, .3);
+  padding-left: 20px;
 }
 
 .footer__site, .footer__user {
@@ -992,9 +998,10 @@ button.btn {
 .footer__social {
   display: flex;
   margin: 0;
+  margin-left: 50%;
   padding: 0;
   list-style: none;
-  margin-top: 60px;
+  transform: translateX(-50%);
 }
 
 .footer__social li {
@@ -1062,7 +1069,6 @@ button.btn {
 
 .logo__html-academy {
   display: block;
-  margin-top: 61px;
 }
 
 .logo__html-academy:hover, .logo__html-academy:focus {
@@ -1075,7 +1081,6 @@ button.btn {
 
 .telephone {
   display: block;
-  margin-top: 39px;
 }
 
 .modal {
@@ -1841,3 +1846,41 @@ img.grayscale:hover {
 }
 
 /*_______________________________________*/
+/* _________________________FOOOOOTER ROWS */
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 20px;
+  justify-content: space-between;
+}
+
+.footer__row-1, .footer__row-2, .footer__row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__row-1 {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.footer__row-2 {
+  margin-bottom: 60px;
+}
+
+.footer__row-3 {
+  position: relative;
+}
+
+.footer__row-3::after {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
+/* ______________________________ */
