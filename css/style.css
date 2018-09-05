@@ -1130,6 +1130,7 @@ button.btn {
 
 .logo__html-academy {
   display: block;
+  margin-left: auto;
 }
 
 .logo__html-academy:hover, .logo__html-academy:focus {
@@ -1301,6 +1302,7 @@ button.btn--close {
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
   color: #000;
   margin-bottom: 25px;
   letter-spacing: 0.7px;
@@ -1401,6 +1403,7 @@ button.btn--close {
   font-family: 'Gilroy', 'Arial Black', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 800;
   position: relative;
   z-index: 1;
   letter-spacing: 3.5px;
@@ -1410,6 +1413,12 @@ button.btn--close {
 
 .catalog-page__aside-col h2 {
   margin: 0;
+  padding: 0;
+}
+
+.catalog-page__main-col h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
