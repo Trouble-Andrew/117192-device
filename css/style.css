@@ -490,6 +490,8 @@ img {
   display: inline-block;
   width: 12px;
   height: 12px;
+  font-size: 0;
+  padding: 0;
   background-color: transparent;
   border: 1px solid #000;
   border-radius: 50%;
@@ -503,8 +505,8 @@ img {
 .slider__radio--active::before {
   position: absolute;
   content: "";
-  top: 14px;
-  left: 4px;
+  top: 13px;
+  left: 3px;
   width: 6px;
   height: 6px;
   border: 1px solid #000;
