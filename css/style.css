@@ -364,14 +364,15 @@ img {
 
 .sub-menu {
   position: absolute;
-  z-index: 20;
+  z-index: -20;
   left: -60px;
-  display: none;
+  /* display: none; */
   width: 1160px;
   min-height: 161px;
   padding-top: 20px;
   padding-left: 60px;
   background-color: #f7e296;
+  opacity: 0;
 }
 
 .sub-menu ul {
@@ -403,6 +404,8 @@ img {
 }
 
 .dropdown:hover .sub-menu, .dropdown:focus-within .sub-menu {
+  opacity: 1;
+  z-index: 20;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -603,6 +606,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  transition: all 0.3s ease-out;
 }
 
 a.btn {
@@ -1262,6 +1266,7 @@ button.btn {
 
 .modal {
   position: fixed;
+  z-index: 100;
 }
 
 .modal__map {
@@ -1419,14 +1424,30 @@ button.btn--close {
 .modal__map {
   display: none;
   width: 960px;
-  height: 559px;
-  background-color: red;
+  height: 539px;
+  background-image: url(../img/map-big.jpg);
+  background-position: center;
   z-index: 100;
   top: 120px;
   left: 50%;
   margin-left: -480px;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, .2);
   box-shadow: 0 10px 20px rgba(4, 6, 6, .2);
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-show {
+  display: block;
 }
 
 .catalog-page {
@@ -1904,6 +1925,7 @@ ul.sorting-direction {
 .catalog__item:hover .product-card__img, .catalog__item:hover img {
   background-color: #eeeeee;
   opacity: 0.7;
+  transition: all 0.3s ease-out;
 }
 
 .catalog__item:hover .product-card__actions {
@@ -2220,6 +2242,8 @@ img.grayscale:hover {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
+    opacity: 1;
+    z-index: 20;
   }
 
   .main-nav__search .field-wrapper {

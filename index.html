@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <div class="container">
     <header class="page-header page-header--main">
       <a href="index.html" class="page-header__logo"><img src="img/device-logo.svg" alt="Логотип Девайс" width="165" height="35"></a>
@@ -262,7 +263,7 @@
           <a href="">
             <div class="map"></div>
           </a>
-          <a href="" class="btn about-us__btn">Напишите нам</a>
+          <a href="" class="btn about-us__btn contacts__btn">Напишите нам</a>
         </section>
       </div>
     </div>
@@ -344,19 +345,20 @@
       <form action="https://echo.htmlacademy.ru" method="get" class="modal-form">
         <div class="field-wrapper">
           <label class="modal-form__label" for="contact-name">Ваше имя</label>
-          <input class="modal-form__field" type="text" name="name" id="contact-name" placeholder="Имя Фамилия" required></div>
+          <input class="modal-form__field" type="text" name="name" id="contact-name" placeholder="Имя Фамилия"></div>
         <div class="field-wrapper">
           <label class="modal-form__label" for="contact-email">Ваш e-mail</label>
-          <input class="modal-form__field" type="email" name="email" id="contact-email" placeholder="email@example.com" required></div>
+          <input class="modal-form__field" type="email" name="email" id="contact-email" placeholder="email@example.com"></div>
         <div class="field-wrapper">
           <label class="modal-form__label" for="input-text">Текст письма</label>
-          <textarea class="modal-form__field" name="text" rows="12" id="input-text" placeholder="В свободной форме" required></textarea>
+          <textarea class="modal-form__field" name="text" rows="12" id="input-text" placeholder="В свободной форме"></textarea>
         </div>
         <button type="submit" class="btn modal__btn">Напишите нам</button>
       </form>
     </div>
   </section>
-  <section class="modal modal__map"></section>
+  <section class="modal modal__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5441627348646!2d37.52718698298568!3d55.68702011279733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1536231514931" width="960" height="539" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
