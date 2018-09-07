@@ -1453,6 +1453,11 @@ button.btn--close {
   background-color: #fff;
 }
 
+.modal-form__field--invalid {
+  background-color: #edb5b5;
+  opacity: 0.5;
+}
+
 .modal__map {
   display: none;
   width: 960px;
