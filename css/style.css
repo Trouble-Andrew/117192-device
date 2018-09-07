@@ -519,11 +519,15 @@ img {
   align-items: flex-start;
 }
 
+.slider__slide:nth-child(3) .slider__img-wrapper {
+  padding-top: 60px;
+}
+
 .slider__desc {
   position: relative;
   width: 560px;
   margin-left: 40px;
-  padding-right: 60px;
+  padding-right: 55px;
   padding-top: 78px;
 }
 
