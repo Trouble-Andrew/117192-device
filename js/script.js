@@ -11,43 +11,82 @@ var fieldText = popup.querySelector("#input-text");
 var storageName = localStorage.getItem("fieldName");
 var isStorageSupport = true;
 var storage = "";
+// Slider main
 var slideMain1 = document.querySelector(".slider__slide:nth-child(1)");
 var slideMain2 = document.querySelector(".slider__slide:nth-child(2)");
 var slideMain3 = document.querySelector(".slider__slide:nth-child(3)");
-var slideMainButton = document.querySelector(".slider__radio");
+var slideMainActive1 = document.querySelector(".slider__radio:nth-child(1)");
+var slideMainActive2 = document.querySelector(".slider__radio:nth-child(2)");
+var slideMainActive3 = document.querySelector(".slider__radio:nth-child(3)");
+var slideMainButtons = document.querySelectorAll(".slider__radio");
 var slideMainButton1 = document.querySelector("button[name='slide-1']");
 var slideMainButton2 = document.querySelector("button[name='slide-2']");
 var slideMainButton3 = document.querySelector("button[name='slide-3']");
+// Slider Services
+var slideServicesButton1 = document.querySelector("button[name='btn-delivey']");
+var slideServicesButton2 = document.querySelector("button[name='btn-guarantee']");
+var slideServicesButton3 = document.querySelector("button[name='btn-credit']");
+var slideServicesButtons = document.querySelectorAll(".slider-services__btn");
+var slideServices1 = document.querySelector(".slider-services__slide:nth-child(1)");
+var slideServices2 = document.querySelector(".slider-services__slide:nth-child(2)");
+var slideServices3 = document.querySelector(".slider-services__slide:nth-child(3)");
 
+// Slider Services
+slideServicesButton3.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideServicesButtons[0].classList.remove("slider-services__btn--active");
+  slideServicesButtons[1].classList.remove("slider-services__btn--active");
+  slideServices1.classList.remove("slider-services__slide--active");
+  slideServices2.classList.remove("slider-services__slide--active");
+  slideServices3.classList.add("slider-services__slide--active");
+  slideServicesButtons[2].classList.add("slider-services__btn--active");
+});
+slideServicesButton2.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideServicesButtons[0].classList.remove("slider-services__btn--active");
+  slideServicesButtons[2].classList.remove("slider-services__btn--active");
+  slideServices1.classList.remove("slider-services__slide--active");
+  slideServices2.classList.add("slider-services__slide--active");
+  slideServices3.classList.remove("slider-services__slide--active");
+  slideServicesButtons[1].classList.add("slider-services__btn--active");
+});
+slideServicesButton1.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideServicesButtons[1].classList.remove("slider-services__btn--active");
+  slideServicesButtons[2].classList.remove("slider-services__btn--active");
+  slideServices1.classList.add("slider-services__slide--active");
+  slideServices2.classList.remove("slider-services__slide--active");
+  slideServices3.classList.remove("slider-services__slide--active");
+  slideServicesButtons[0].classList.add("slider-services__btn--active");
+});
 
-// function sliderMain(num) {
-//   slideMainButton(num).addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     slideMain(x).classList.add("slider__slide--active");
-//   });
-// }
-//
-// sliderMain(3);
-
+// Slider main
 slideMainButton3.addEventListener("click", function(evt) {
   evt.preventDefault();
-  slideMainButton.classList.remove("slider__radio--active");
+  slideMainButtons[0].classList.remove("slider__radio--active");
+  slideMainButtons[1].classList.remove("slider__radio--active");
   slideMain1.classList.remove("slider__slide--active");
   slideMain2.classList.remove("slider__slide--active");
   slideMain3.classList.add("slider__slide--active");
-  slideMainButton.classList.add("slider__radio--active");
+  slideMainActive3.classList.add("slider__radio--active");
 });
 slideMainButton2.addEventListener("click", function(evt) {
   evt.preventDefault();
+  slideMainButtons[0].classList.remove("slider__radio--active");
+  slideMainButtons[2].classList.remove("slider__radio--active");
   slideMain1.classList.remove("slider__slide--active");
   slideMain2.classList.add("slider__slide--active");
   slideMain3.classList.remove("slider__slide--active");
+  slideMainActive2.classList.add("slider__radio--active");
 });
 slideMainButton1.addEventListener("click", function(evt) {
   evt.preventDefault();
+  slideMainButtons[1].classList.remove("slider__radio--active");
+  slideMainButtons[2].classList.remove("slider__radio--active");
   slideMain1.classList.add("slider__slide--active");
   slideMain2.classList.remove("slider__slide--active");
   slideMain3.classList.remove("slider__slide--active");
+  slideMainActive1.classList.add("slider__radio--active");
 });
 
 

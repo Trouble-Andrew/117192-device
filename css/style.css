@@ -642,7 +642,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  transition: all 0.3s ease-out;
 }
 
 a.btn {
@@ -854,6 +853,33 @@ button.btn {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3px;
+}
+
+.slider-services__btn--active::before {
+  background-color: #000;
+}
+
+.slider-services__controls .slider-services__btn--active:hover, .slider-services__controls .slider-services__btn--active:focus {
+  background-color: #000;
+  color: rgba(240, 197, 46, 1);
+}
+
+.slider-services__controls .slider-services__btn--active {
+  color: rgba(240, 197, 46, 1);
+  background-color: #000;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.slider-services__btn--active::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0px;
+  right: -120px;
+  width: 120px;
+  height: 39px;
+  background-color: #000;
 }
 
 .slider-services__btn:active::after {
