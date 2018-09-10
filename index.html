@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,14 +48,14 @@
           <ul class="main-nav__user">
             <li class="user-profile user-profile--disable"><a href="">Валентин Петухов</a></li>
             <li class="login"><a href="">Войти</a></li>
-            <li class="logout logout--disable"><a href="">Выйти</a></li>
+            <li class="main-nav__logout logout logout--disable"><a href="">Выйти</a></li>
             <li class="compare"><a href="">Сравнить</a></li>
             <li class="cart"><a href="">Корзина</a></li>
           </ul>
           <ul class="main-nav__site">
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Гарантия</a></li>
-            <li><a href="">Контакты</a></li>
+            <li class="main-nav__li"><a href="">Доставка</a></li>
+            <li class="main-nav__li"><a href="">Гарантия</a></li>
+            <li class="main-nav__li"><a href="">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -135,37 +135,37 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55"></div>
               <p>Виртуальная реальность</p>
             </a>
           </li>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117"></div>
-              <p>Моноподы для селфи</p>
+              <p>Моноподы для&nbsp;селфи</p>
             </a>
           </li>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87"></div>
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65"></div>
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-5.svg" alt="Умные часы" width="56" height="98"></div>
               <p>Умные часы</p>
             </a>
           </li>
           <li class="categories__item">
-            <a href="">
+            <a href="" class="categories__link">
               <div class="img-wrapper"><img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69"></div>
               <p>Квадрокоптеры</p>
             </a>
@@ -203,7 +203,7 @@
       <section class="company">
         <h2 class="visually-hidden">Популярные производители</h2>
         <ul>
-          <li>
+          <li class="company__li">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic1">
@@ -213,7 +213,7 @@
                  </svg>
               </a>
           </li>
-          <li>
+          <li class="company__li">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic2">
@@ -223,7 +223,7 @@
                  </svg>
               </a>
           </li>
-          <li>
+          <li class="company__li">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic3">
@@ -233,7 +233,7 @@
                  </svg>
               </a>
           </li>
-          <li>
+          <li class="company__li">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic4">
@@ -277,12 +277,12 @@
             </svg>
           </a>
         <ul class="footer__user">
-          <li class="user-profile user-profile--disable"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Валентин Петухов</a>
+          <li class="user-profile user-profile--disable"><a href="" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Валентин Петухов</a>
           </li>
-          <li class="login"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a></li>
-          <li class="logout logout--disable"><a href="">Выйти</a></li>
-          <li class="compare"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a></li>
-          <li class="cart"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
+          <li class="login"><a href="" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a></li>
+          <li class="logout logout--disable"><a href="" class="footer__link">Выйти</a></li>
+          <li class="compare"><a href="" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a></li>
+          <li class="cart"><a href="" class="footer__link"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
           </li>
         </ul>
       </div>
@@ -324,7 +324,10 @@
       </form>
     </div>
   </section>
-  <section class="modal modal__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5441627348646!2d37.52718698298568!3d55.68702011279733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1536231514931" width="960" height="539" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+  <section class="modal modal__map">
+    <button type="button" name="button" class="btn btn--close btn-map"></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5441627348646!2d37.52718698298568!3d55.68702011279733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1536231514931"
+      width="960" height="539" style="border:0" allowfullscreen></iframe></section>
   <script src="js/script.js"></script>
 </body>
 

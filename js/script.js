@@ -4,6 +4,7 @@ var overlay = document.querySelector(".overlay");
 var mapLink = document.querySelector(".map-link");
 var map = document.querySelector(".modal__map");
 var popupClose = document.querySelector(".btn--close");
+var mapClose = document.querySelector(".btn-map");
 var modalForm = popup.querySelector(".modal-form");
 var fieldName = popup.querySelector("#contact-name");
 var fieldEmail = popup.querySelector("#contact-email");
@@ -119,6 +120,12 @@ popupClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
+  overlay.classList.remove("modal-show");
+});
+
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
   overlay.classList.remove("modal-show");
 });
 
