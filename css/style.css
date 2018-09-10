@@ -30,15 +30,12 @@
   0% {
     transform: translateY(-2000px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0px);
   }
@@ -48,11 +45,9 @@
   0%, 100% {
     transform: translateX(0);
   }
-
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
-
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
@@ -378,6 +373,7 @@ img {
 /* .main-nav__search input:focus~button {
   display: inline-block;
 } */
+
 .user-profile--disable {
   display: none;
 }
@@ -1107,6 +1103,7 @@ button.btn {
   margin: 0;
   padding: 0;
 } */
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1148,6 +1145,7 @@ button.btn {
   align-items: flex-end;
   flex-wrap: nowrap;
 } */
+
 .footer a {
   color: #fff;
 }
@@ -1864,7 +1862,7 @@ button.btn--close {
 .filter__radio-label input[type="radio"]+.radio-indicator {
   position: absolute;
   z-index: 1;
-  top: -2px;
+  top: -5px;
   left: -2px;
   width: 25px;
   height: 25px;
@@ -1949,6 +1947,10 @@ ul.sorting-direction {
   background-image: url(../img/icon-up-dir.svg);
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+.sorting-direction__item--active {
+  opacity: 1;
 }
 
 .sorting-direction__item:hover, .sorting-direction__item:focus {
@@ -2222,6 +2224,7 @@ ul.sorting-direction {
 }
 
 /* SVG-Filter */
+
 img.grayscale:hover {
   filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0"/></filter></svg>#grayscale');
 }
@@ -2251,7 +2254,9 @@ img.grayscale:hover {
 }
 
 /*_______________________________________*/
+
 /* _________________________FOOOOOTER ROWS */
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2308,8 +2313,8 @@ img.grayscale:hover {
 }
 
 /* ______________________________ */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* стили только для IE10 IE11 */
   .dropdown:hover .sub-menu {
     display: -ms-flexbox;
@@ -2318,11 +2323,9 @@ img.grayscale:hover {
     opacity: 1;
     z-index: 20;
   }
-
   .main-nav__search .field-wrapper {
     display: block;
   }
-
   .main-nav__search button {
     display: none;
     position: absolute;
@@ -2338,49 +2341,39 @@ img.grayscale:hover {
     border: 2px solid transparent;
     background-color: transparent;
   }
-
   .main-nav__search button:hover {
     color: #fff;
     background-color: #000;
   }
-
   .main-nav__search button:active {
     color: rgba(255, 255, 255, .3);
     background-color: #000;
   }
-
   .main-nav__input:focus button, .main-nav__input:focus+button {
     display: inline-block;
     visibility: visible;
     border: 2px solid #000;
   }
-
   .main-nav__input:focus {
     border-bottom-color: #000;
   }
-
   .main-nav__input:focus button {
     border: 2px solid #000;
   }
-
   .main-nav__search input {
     padding-left: 40px;
     paddindg-top: 14px;
     padding-bottom: 14px;
   }
-
   .slider__radio--active::before {
     top: 12px;
   }
-
   .categories__item:active {
     opacity: 0.3;
   }
-
   .categories__item img:active {
     opacity: 0.3;
   }
-
   .categories__item p:active {
     opacity: 0.3;
   }
