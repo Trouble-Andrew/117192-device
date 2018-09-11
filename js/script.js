@@ -79,12 +79,6 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slider__slide");
   var dots = document.getElementsByClassName("slider__radio");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
   for (i = 0; i < slides.length; i++) {
     slides[i].classList.remove("slider__slide--active");
   }
