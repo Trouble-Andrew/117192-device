@@ -14,16 +14,16 @@ var storageEmail = localStorage.getItem("fieldEmail");
 var isStorageSupport = true;
 var storage = "";
 // Slider main
-var slideMain1 = document.querySelector(".slider__slide:nth-child(1)");
-var slideMain2 = document.querySelector(".slider__slide:nth-child(2)");
-var slideMain3 = document.querySelector(".slider__slide:nth-child(3)");
-var slideMainActive1 = document.querySelector(".slider__radio:nth-child(1)");
-var slideMainActive2 = document.querySelector(".slider__radio:nth-child(2)");
-var slideMainActive3 = document.querySelector(".slider__radio:nth-child(3)");
-var slideMainButtons = document.querySelectorAll(".slider__radio");
-var slideMainButton1 = document.querySelector("button[name='slide-1']");
-var slideMainButton2 = document.querySelector("button[name='slide-2']");
-var slideMainButton3 = document.querySelector("button[name='slide-3']");
+// var slideMain1 = document.querySelector(".slider__slide:nth-child(1)");
+// var slideMain2 = document.querySelector(".slider__slide:nth-child(2)");
+// var slideMain3 = document.querySelector(".slider__slide:nth-child(3)");
+// var slideMainActive1 = document.querySelector(".slider__radio:nth-child(1)");
+// var slideMainActive2 = document.querySelector(".slider__radio:nth-child(2)");
+// var slideMainActive3 = document.querySelector(".slider__radio:nth-child(3)");
+// var slideMainButtons = document.querySelectorAll(".slider__radio");
+// var slideMainButton1 = document.querySelector("button[name='slide-1']");
+// var slideMainButton2 = document.querySelector("button[name='slide-2']");
+// var slideMainButton3 = document.querySelector("button[name='slide-3']");
 // Slider Services
 var slideServicesButton1 = document.querySelector("button[name='btn-delivey']");
 var slideServicesButton2 = document.querySelector("button[name='btn-guarantee']");
