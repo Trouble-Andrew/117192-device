@@ -86,12 +86,12 @@ function showSlides(n) {
     slideIndex = slides.length
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].className.replace("", " slider__slide--active");
+    slides[i].classList.remove("slider__slide--active");
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" slider__radio--active", "");
   }
-  slides[slideIndex - 1].className.replace(" slider__slide--active", "");
+  slides[slideIndex - 1].classList.add("slider__slide--active");
   dots[slideIndex - 1].className += " slider__radio--active";
 }
 
