@@ -1,8 +1,8 @@
 var link = document.querySelector(".contacts__btn");
-var popup = document.querySelector(".modal__write-us");
+var popup = document.querySelector(".modal--write-us");
 var overlay = document.querySelector(".overlay");
 var mapLink = document.querySelector(".map-link");
-var map = document.querySelector(".modal__map");
+var map = document.querySelector(".modal--map");
 var popupClose = document.querySelector(".btn--close");
 var mapClose = document.querySelector(".btn-map");
 var modalForm = popup.querySelector(".modal-form");
@@ -10,6 +10,7 @@ var fieldName = popup.querySelector("#contact-name");
 var fieldEmail = popup.querySelector("#contact-email");
 var fieldText = popup.querySelector("#input-text");
 var storageName = localStorage.getItem("fieldName");
+var storageEmail = localStorage.getItem("fieldEmail");
 var isStorageSupport = true;
 var storage = "";
 // Slider main
@@ -62,33 +63,65 @@ slideServicesButton1.addEventListener("click", function(evt) {
 });
 
 // Slider main
-slideMainButton3.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideMainButtons[0].classList.remove("slider__radio--active");
-  slideMainButtons[1].classList.remove("slider__radio--active");
-  slideMain1.classList.remove("slider__slide--active");
-  slideMain2.classList.remove("slider__slide--active");
-  slideMain3.classList.add("slider__slide--active");
-  slideMainActive3.classList.add("slider__radio--active");
-});
-slideMainButton2.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideMainButtons[0].classList.remove("slider__radio--active");
-  slideMainButtons[2].classList.remove("slider__radio--active");
-  slideMain1.classList.remove("slider__slide--active");
-  slideMain2.classList.add("slider__slide--active");
-  slideMain3.classList.remove("slider__slide--active");
-  slideMainActive2.classList.add("slider__radio--active");
-});
-slideMainButton1.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideMainButtons[1].classList.remove("slider__radio--active");
-  slideMainButtons[2].classList.remove("slider__radio--active");
-  slideMain1.classList.add("slider__slide--active");
-  slideMain2.classList.remove("slider__slide--active");
-  slideMain3.classList.remove("slider__slide--active");
-  slideMainActive1.classList.add("slider__radio--active");
-});
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider__slide");
+  var dots = document.getElementsByClassName("slider__radio");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].className.replace("", " slider__slide--active");
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" slider__radio--active", "");
+  }
+  slides[slideIndex - 1].className.replace(" slider__slide--active", "");
+  dots[slideIndex - 1].className += " slider__radio--active";
+}
+
+// slideMainButton3.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   slideMainButtons[0].classList.remove("slider__radio--active");
+//   slideMainButtons[1].classList.remove("slider__radio--active");
+//   slideMain1.classList.remove("slider__slide--active");
+//   slideMain2.classList.remove("slider__slide--active");
+//   slideMain3.classList.add("slider__slide--active");
+//   slideMainActive3.classList.add("slider__radio--active");
+// });
+// slideMainButton2.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   slideMainButtons[0].classList.remove("slider__radio--active");
+//   slideMainButtons[2].classList.remove("slider__radio--active");
+//   slideMain1.classList.remove("slider__slide--active");
+//   slideMain2.classList.add("slider__slide--active");
+//   slideMain3.classList.remove("slider__slide--active");
+//   slideMainActive2.classList.add("slider__radio--active");
+// });
+// slideMainButton1.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   slideMainButtons[1].classList.remove("slider__radio--active");
+//   slideMainButtons[2].classList.remove("slider__radio--active");
+//   slideMain1.classList.add("slider__slide--active");
+//   slideMain2.classList.remove("slider__slide--active");
+//   slideMain3.classList.remove("slider__slide--active");
+//   slideMainActive1.classList.add("slider__radio--active");
+// });
 
 
 try {
@@ -104,6 +137,10 @@ link.addEventListener("click", function(evt) {
   if (storageName) {
     fieldName.value = storageName;
     fieldEmail.focus();
+  } else if (storageName && storageEmail) {
+    fieldName.value = storageName;
+    fieldEmail.value = storageEmail;
+    fieldText.focus();
   } else {
     fieldName.focus();
   }
@@ -113,7 +150,6 @@ mapLink.addEventListener("click", function(evt) {
   evt.preventDefault();
   map.classList.add("modal-show");
   overlay.classList.add("modal-show");
-  fieldName.focus();
 });
 
 popupClose.addEventListener("click", function(evt) {
@@ -142,6 +178,10 @@ window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
+      overlay.classList.remove("modal-show");
+    } else if (map.classList.contains("modal-show")) {
+      evt.preventDefault();
+      map.classList.remove("modal-show");
       overlay.classList.remove("modal-show");
     }
   }

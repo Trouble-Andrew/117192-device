@@ -53,9 +53,9 @@
             <li class="cart"><a href="">Корзина</a></li>
           </ul>
           <ul class="main-nav__site">
-            <li class="main-nav__li"><a href="">Доставка</a></li>
-            <li class="main-nav__li"><a href="">Гарантия</a></li>
-            <li class="main-nav__li"><a href="">Контакты</a></li>
+            <li class="main-nav__item"><a href="">Доставка</a></li>
+            <li class="main-nav__item"><a href="">Гарантия</a></li>
+            <li class="main-nav__item"><a href="">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -126,9 +126,9 @@
           </li>
         </ol>
         <ul class="slider__switches">
-          <li class="slider__radio slider__radio--active"><button type="button" name="slide-1"></button></li>
-          <li class="slider__radio"><button type="button" name="slide-2"></button></li>
-          <li class="slider__radio"><button type="button" name="slide-3"></button></li>
+          <li class="slider__radio slider__radio--active"><button type="button" name="slide-1"  onclick="currentSlide(1)"></button></li>
+          <li class="slider__radio"><button type="button" name="slide-2" onclick="currentSlide(2)"></button></li>
+          <li class="slider__radio"><button type="button" name="slide-3" onclick="currentSlide(3)"></button></li>
         </ul>
       </div>
       <section class="categories">
@@ -203,7 +203,7 @@
       <section class="company">
         <h2 class="visually-hidden">Популярные производители</h2>
         <ul>
-          <li class="company__li">
+          <li class="company__item">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic1">
@@ -213,7 +213,7 @@
                  </svg>
               </a>
           </li>
-          <li class="company__li">
+          <li class="company__item">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic2">
@@ -223,7 +223,7 @@
                  </svg>
               </a>
           </li>
-          <li class="company__li">
+          <li class="company__item">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic3">
@@ -233,7 +233,7 @@
                  </svg>
               </a>
           </li>
-          <li class="company__li">
+          <li class="company__item">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter" viewBox="0 0 260 100" width="260" height="100">
                   <filter id="svg-pic4">
@@ -305,7 +305,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal__write-us">
+  <section class="modal modal--write-us">
     <div class="modal__container">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button type="button" name="button" class="btn btn--close"></button>
@@ -324,10 +324,10 @@
       </form>
     </div>
   </section>
-  <section class="modal modal__map">
+  <section class="modal modal--map">
     <button type="button" name="button" class="btn btn--close btn-map"></button>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5441627348646!2d37.52718698298568!3d55.68702011279733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1536231514931"
-      width="960" height="539" style="border:0" allowfullscreen></iframe></section>
+      width="960" height="539" allowfullscreen></iframe></section>
   <script src="js/script.js"></script>
 </body>
 
