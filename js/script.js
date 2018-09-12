@@ -33,6 +33,7 @@ function showServicesSlides(n) {
   var conrtolServices = document.getElementsByClassName("slider-services__btn");
   for (i = 0; i < slidesServices.length; i++) {
     slidesServices[i].classList.remove("slider-services__slide--active");
+    conrtolServices[i].setAttribute("onclick", "currentServicesSlide(" + (i + 1) + ")");
   }
   for (i = 0; i < conrtolServices.length; i++) {
     conrtolServices[i].className = conrtolServices[i].className.replace(" slider-services__btn--active", "");
@@ -45,6 +46,7 @@ function showServicesSlides(n) {
 
 var slideIndex = 1;
 showSlides(slideIndex);
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -63,6 +65,7 @@ function showSlides(n) {
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" slider__radio--active", "");
+    dots[i].setAttribute("onclick", "currentSlide(" + (i + 1) + ")");
   }
   slides[slideIndex - 1].classList.add("slider__slide--active");
   dots[slideIndex - 1].className += " slider__radio--active";

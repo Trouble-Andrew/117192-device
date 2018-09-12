@@ -552,7 +552,7 @@ img {
 .slider__slides {
   position: relative;
   z-index: 1;
-  min-height: 470px;
+  min-height: 486px;
   counter-reset: myCounter;
 }
 
