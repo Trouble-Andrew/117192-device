@@ -9,8 +9,8 @@ var modalForm = popup.querySelector(".modal-form");
 var fieldName = popup.querySelector("#contact-name");
 var fieldEmail = popup.querySelector("#contact-email");
 var fieldText = popup.querySelector("#input-text");
-var storageName = localStorage.getItem("fieldName");
-var storageEmail = localStorage.getItem("fieldEmail");
+var storageName = "";
+var storageEmail = "";
 var isStorageSupport = true;
 var storage = "";
 
@@ -70,6 +70,8 @@ function showSlides(n) {
 
 try {
   storage = localStorage.getItem(fieldName);
+  storageName = localStorage.getItem("fieldName");
+  storageEmail = localStorage.getItem("fieldEmail");
 } catch (err) {
   isStorageSupport = false;
 }
