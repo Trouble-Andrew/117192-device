@@ -13,54 +13,33 @@ var storageName = localStorage.getItem("fieldName");
 var storageEmail = localStorage.getItem("fieldEmail");
 var isStorageSupport = true;
 var storage = "";
-// Slider main
-// var slideMain1 = document.querySelector(".slider__slide:nth-child(1)");
-// var slideMain2 = document.querySelector(".slider__slide:nth-child(2)");
-// var slideMain3 = document.querySelector(".slider__slide:nth-child(3)");
-// var slideMainActive1 = document.querySelector(".slider__radio:nth-child(1)");
-// var slideMainActive2 = document.querySelector(".slider__radio:nth-child(2)");
-// var slideMainActive3 = document.querySelector(".slider__radio:nth-child(3)");
-// var slideMainButtons = document.querySelectorAll(".slider__radio");
-// var slideMainButton1 = document.querySelector("button[name='slide-1']");
-// var slideMainButton2 = document.querySelector("button[name='slide-2']");
-// var slideMainButton3 = document.querySelector("button[name='slide-3']");
-// Slider Services
-var slideServicesButton1 = document.querySelector("button[name='btn-delivey']");
-var slideServicesButton2 = document.querySelector("button[name='btn-guarantee']");
-var slideServicesButton3 = document.querySelector("button[name='btn-credit']");
-var slideServicesButtons = document.querySelectorAll(".slider-services__btn");
-var slideServices1 = document.querySelector(".slider-services__slide:nth-child(1)");
-var slideServices2 = document.querySelector(".slider-services__slide:nth-child(2)");
-var slideServices3 = document.querySelector(".slider-services__slide:nth-child(3)");
 
 // Slider Services
-slideServicesButton3.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideServicesButtons[0].classList.remove("slider-services__btn--active");
-  slideServicesButtons[1].classList.remove("slider-services__btn--active");
-  slideServices1.classList.remove("slider-services__slide--active");
-  slideServices2.classList.remove("slider-services__slide--active");
-  slideServices3.classList.add("slider-services__slide--active");
-  slideServicesButtons[2].classList.add("slider-services__btn--active");
-});
-slideServicesButton2.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideServicesButtons[0].classList.remove("slider-services__btn--active");
-  slideServicesButtons[2].classList.remove("slider-services__btn--active");
-  slideServices1.classList.remove("slider-services__slide--active");
-  slideServices2.classList.add("slider-services__slide--active");
-  slideServices3.classList.remove("slider-services__slide--active");
-  slideServicesButtons[1].classList.add("slider-services__btn--active");
-});
-slideServicesButton1.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  slideServicesButtons[1].classList.remove("slider-services__btn--active");
-  slideServicesButtons[2].classList.remove("slider-services__btn--active");
-  slideServices1.classList.add("slider-services__slide--active");
-  slideServices2.classList.remove("slider-services__slide--active");
-  slideServices3.classList.remove("slider-services__slide--active");
-  slideServicesButtons[0].classList.add("slider-services__btn--active");
-});
+
+var slideServicesIndex = 1;
+showServicesSlides(slideServicesIndex);
+
+function plusServicesSlides(n) {
+  showServicesSlides(slideServicesIndex += n);
+}
+
+function currentServicesSlide(n) {
+  showServicesSlides(slideServicesIndex = n);
+}
+
+function showServicesSlides(n) {
+  var i;
+  var slidesServices = document.getElementsByClassName("slider-services__slide");
+  var conrtolServices = document.getElementsByClassName("slider-services__btn");
+  for (i = 0; i < slidesServices.length; i++) {
+    slidesServices[i].classList.remove("slider-services__slide--active");
+  }
+  for (i = 0; i < conrtolServices.length; i++) {
+    conrtolServices[i].className = conrtolServices[i].className.replace(" slider-services__btn--active", "");
+  }
+  slidesServices[slideServicesIndex - 1].classList.add("slider-services__slide--active");
+  conrtolServices[slideServicesIndex - 1].className += " slider-services__btn--active";
+}
 
 // Slider main
 
@@ -88,35 +67,6 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("slider__slide--active");
   dots[slideIndex - 1].className += " slider__radio--active";
 }
-
-// slideMainButton3.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   slideMainButtons[0].classList.remove("slider__radio--active");
-//   slideMainButtons[1].classList.remove("slider__radio--active");
-//   slideMain1.classList.remove("slider__slide--active");
-//   slideMain2.classList.remove("slider__slide--active");
-//   slideMain3.classList.add("slider__slide--active");
-//   slideMainActive3.classList.add("slider__radio--active");
-// });
-// slideMainButton2.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   slideMainButtons[0].classList.remove("slider__radio--active");
-//   slideMainButtons[2].classList.remove("slider__radio--active");
-//   slideMain1.classList.remove("slider__slide--active");
-//   slideMain2.classList.add("slider__slide--active");
-//   slideMain3.classList.remove("slider__slide--active");
-//   slideMainActive2.classList.add("slider__radio--active");
-// });
-// slideMainButton1.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   slideMainButtons[1].classList.remove("slider__radio--active");
-//   slideMainButtons[2].classList.remove("slider__radio--active");
-//   slideMain1.classList.add("slider__slide--active");
-//   slideMain2.classList.remove("slider__slide--active");
-//   slideMain3.classList.remove("slider__slide--active");
-//   slideMainActive1.classList.add("slider__radio--active");
-// });
-
 
 try {
   storage = localStorage.getItem(fieldName);
