@@ -44,6 +44,7 @@
     transform: translateY(0px);
   }
 } */
+
 /* @keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
@@ -62,19 +63,17 @@
     transform: translateY(0px);
   }
 } */
+
 @keyframes bounce {
   0% {
     margin-top: -2000px;
   }
-
   70% {
     margin-top: 30px;
   }
-
   90% {
     margin-top: -10px;
   }
-
   100% {
     margin-top: 0;
   }
@@ -94,6 +93,7 @@
     transform: translateX(10px);
   }
 } */
+
 /* @keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
@@ -108,15 +108,14 @@
     transform: translateX(10px);
   }
 } */
+
 @keyframes shake {
   0%, 100% {
     margin-left: 0;
   }
-
   10%, 30%, 50%, 70%, 90% {
     margin-left: -10px;
   }
-
   20%, 40%, 60%, 80% {
     margin-left: 10px;
   }
@@ -2238,6 +2237,7 @@ ul.sorting-direction {
   border: 2px solid #000;
   border-radius: 50%;
 } */
+
 .pagination {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 16px;
@@ -2336,6 +2336,7 @@ ul.sorting-direction {
 }
 
 /* SVG-Filter */
+
 img.grayscale:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns="http: //www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0"/></filter></svg>#grayscale");
 }
@@ -2365,7 +2366,9 @@ img.grayscale:hover {
 }
 
 /*_______________________________________*/
+
 /* _________________________FOOOOOTER ROWS */
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2422,8 +2425,8 @@ img.grayscale:hover {
 }
 
 /* ______________________________ */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* стили только для IE10 IE11 */
   .dropdown:hover .sub-menu {
     z-index: 20;
@@ -2432,11 +2435,9 @@ img.grayscale:hover {
     display: flex;
     opacity: 1;
   }
-
   .main-nav__search .field-wrapper {
     display: block;
   }
-
   .main-nav__search button {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -2452,51 +2453,50 @@ img.grayscale:hover {
     border: 2px solid transparent;
     background-color: transparent;
   }
-
   .main-nav__search button:hover {
     color: #fff;
     background-color: #000;
   }
-
   .main-nav__search button:active {
     color: rgba(255, 255, 255, .3);
     background-color: #000;
   }
-
   .main-nav__input:focus button, .main-nav__input:focus+button {
     display: inline-block;
     visibility: visible;
     border: 2px solid #000;
   }
-
   .main-nav__input:focus {
     border-bottom-color: #000;
   }
-
   .main-nav__input:focus button {
     border: 2px solid #000;
   }
-
   .main-nav__search input {
     padding-bottom: 14px;
     padding-left: 40px;
     paddindg-top: 14px;
   }
-
   .slider__radio--active::before {
     top: 12px;
   }
-
   .categories__item:active {
     opacity: .3;
   }
-
   .categories__item img:active {
     opacity: .3;
   }
-
   .categories__item p:active {
     opacity: .3;
+  }
+  .slider__desc {
+    width: 575px;
+  }
+  .slider__slides {
+    min-height: 510px;
+  }
+  .slider__desc p {
+    max-width: 495px;
   }
 }
 
@@ -2505,21 +2505,17 @@ img.grayscale:hover {
     top: 18px;
     left: 3px;
   }
-
   .slider__switches {
     top: 200px;
   }
-
   .filters fieldset::before {
     top: -72px;
     left: 0;
   }
-
   .filters .filters__colors::before {
     top: -55px;
     left: 0;
   }
-
   .filters .filters__bluetooth::before {
     top: -56px;
     left: 0;
