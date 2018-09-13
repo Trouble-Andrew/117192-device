@@ -1848,10 +1848,11 @@ button.btn--close {
 .filters .btn {
   width: 200px;
   letter-spacing: 3px;
+  padding-left: 0;
 }
 
 .filters .btn::before {
-  width: 200px;
+  width: 206px;
 }
 
 .filter-form__range-controls {
@@ -2555,6 +2556,10 @@ img.grayscale:hover {
 
   .contacts p {
     margin-bottom: 68px;
+  }
+
+  .filters .btn::before {
+    top: 21px;
   }
 }
 
