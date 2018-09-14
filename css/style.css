@@ -26,42 +26,24 @@
   src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
 }
 
-/* @-webkit-keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    margin-top: -2000px;
   }
+
   70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    margin-top: 30px;
   }
+
   90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    margin-top: -10px;
   }
+
   100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    margin-top: 0;
   }
-} */
-/* @keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-  70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-} */
+}
+
 @keyframes bounce {
   0% {
     margin-top: -2000px;
@@ -80,34 +62,20 @@
   }
 }
 
-/* @-webkit-keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    margin-left: 0;
   }
+
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    margin-left: -10px;
   }
+
   20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    margin-left: 10px;
   }
-} */
-/* @keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-} */
+}
+
 @keyframes shake {
   0%, 100% {
     margin-left: 0;
@@ -589,7 +557,6 @@ img {
   text-align: center;
   letter-spacing: .36px;
   color: #fff;
-  color: #fff;
 }
 
 .slider__slide--active {
@@ -788,6 +755,7 @@ button.btn {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -837,7 +805,9 @@ button.btn {
   -webkit-box-pack: flex-start;
   -ms-flex-pack: flex-start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -1096,6 +1066,7 @@ button.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1117,6 +1088,7 @@ button.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1248,6 +1220,7 @@ button.btn {
 }
 
 .footer__site {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 500px;
 }
@@ -1444,6 +1417,8 @@ button.btn {
   width: 960px;
   min-height: 553px;
   padding: 95px 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #fff;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, .2);
@@ -2260,22 +2235,17 @@ ul.sorting-direction {
   height: 61px;
   border: 2px solid #000;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-/* .product-new::after {
-  position: absolute;
-  top: 29px;
-  right: 28px;
-  width: 60px;
-  height: 61px;
-  content: "";
-  opacity: .1;
-  border: 2px solid #000;
-  border-radius: 50%;
-} */
 .pagination {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 16px;
@@ -2402,8 +2372,6 @@ img.grayscale:hover {
   opacity: 0;
 }
 
-/*_______________________________________*/
-/* _________________________FOOOOOTER ROWS */
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2459,7 +2427,6 @@ img.grayscale:hover {
   background-color: #ffc600;
 }
 
-/* ______________________________ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
   /* стили только для IE10 IE11 */
